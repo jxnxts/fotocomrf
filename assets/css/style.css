@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+body{
+    background: url(../images/bg-min.jpg) no-repeat;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 80px;
+}
+.line-footer{
+    background: url(../images/Group\ 207.jpg) no-repeat center;
+    background-size: cover;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+.listafotos{
+    background-color: #fff;
+    border-top: 8px solid #11D876;
+    padding: 30px 0;
+    overflow: hidden;
+}
+.listafotos a{
+    display: inline;
+    float: left;
+	width: auto !important;
+}
+.listafotos a:hover{
+    box-shadow: -10px 34px 50px -20px rgba(0, 0, 0, 0.5);;
+}
+.bt-enviarfoto{
+    background-color: #F9BE16;
+    color: #CD1944;
+    padding: 5px 30px;
+    display: inline-block;
+    border-radius: 26px;
+    margin-top: 30px;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+.bt-enviarfoto:hover{
+    color: #fff;
+    background-color: #F9BE16;
+    box-shadow: 10px 4px 20px 0px rgba(0, 0, 0, 0.5);
+}
+.progress{
+    width: 270px;
+    margin: 0 auto;
+    background-color: #F9BE16;
+    height: 60px;
+    border-radius: 26px;
+}
+#loading{
+    -webkit-animation:spin 1s linear infinite;
+    -moz-animation:spin 1s linear infinite;
+    animation:spin 1s linear infinite;
+    margin-bottom: 30px;
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+#tela03 h2{
+    text-transform: uppercase;
+}
+.cards .card{
+    background-color: #fff;
+    border-radius: 24px;
+    padding: 30px 30px 15px 30px;
+}
+.cards .card span{
+    color: #E42837;
+    display: block;
+    margin-bottom: 15px;
+}
+.cards .card img{
+    border-radius: 24px;
+}
+.cards .card .icons-share a{
+    background: url(../images/icon-social.png) no-repeat;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    background-size: 160px;
+    margin: 0 2px;
+}
+
+.cards .card .icons-share a.face{
+    background-position: -41px 1px;
+}
+.cards .card .icons-share a.whats{
+    background-position: -56px 0;
+}
+.cards .card .icons-share a.down{
+    background-position: -84px 0;
+}
+.bt-convidar{
+    font-size: 20px;
+}
+.bt-convidar img{
+    position: relative;
+    top: -2px;
+}
+
+@media (max-width: 600px){
+    body{
+        padding-bottom: 140px;
+       
+    }
+    h2, p{
+        padding: 0 20px;
+    }
+    .logo{
+        width: 50%;
+    }
+    .listafotos img{
+        width: 100%;
+    }
+	.cards .col-md-3{
+		    margin-bottom: 30px;
+	}
+}
+
+.picture-input {
+    display: none;
+}
